@@ -3,18 +3,39 @@ package lab2;
 /**
  * Describe responsibilities here.
  *
- * @author      your name goes here
- * @version     1.00
+ * @author your name goes here
+ * @version 1.00
  */
-public class IntroJavaCourse {
-    String courseName;
+public class IntroJavaCourse implements CreditedCourses {
+
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
+    private int computersAvailable;
+    private double totalPossiblePoints;
 
-    public IntroJavaCourse(String courseName, String courseNumber) {
+    public int getComputersAvailable() {
+        return computersAvailable;
+    }
+
+    public void setComputersAvailable(int computersAvailable) {
+        this.computersAvailable = computersAvailable;
+    }
+
+    public double getTotalPossiblePoints() {
+        return totalPossiblePoints;
+    }
+
+    public void setTotalPossiblePoints(double totalPossiblePoints) {
+        this.totalPossiblePoints = totalPossiblePoints;
+    }
+
+    public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
+        this.credits = credits;
+        this.prerequisites = prerequisites;
     }
 
     public String getCourseNumber() {
@@ -41,5 +62,16 @@ public class IntroJavaCourse {
         this.prerequisites = prerequisites;
     }
 
-    
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public String getRoomNumber() {
+        return ("L119");
+    }
+
 }
