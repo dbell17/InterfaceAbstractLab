@@ -19,6 +19,7 @@ public abstract class CreditedCourse {
     private String prerequisites;
     private String roomNumber;
 
+
     /**
      *
      * @return

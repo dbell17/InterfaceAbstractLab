@@ -17,10 +17,18 @@ public class AdvancedJavaCourse extends CreditedCourse {
         this.setPrerequisites(prerequisites);
     }
 
-    public String getCapitalizedCourseName() {
+    /**
+     *
+     * @return
+     */
+        public String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }
 
+    /**
+     *
+     * @param prerequisites
+     */
     public void setPrerequisites(String prerequisites) {
         if (prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -57,30 +65,56 @@ public class AdvancedJavaCourse extends CreditedCourse {
             this.setCourseName(courseName);
         }
     }
-        @Override
-        public void setCourseNumber
-        (String courseNumber) {
+
+    /**
+     *
+     * @param courseNumber
+     */
+    @Override
+    public void setCourseNumber(String courseNumber) {
         this.setCourseNumber(courseNumber);
-        }
-   public final void setTotalPointsPossible(double totalPointsPossible){
-             this.setTotalPointsPossible(totalPointsPossible);
-         }
+    }
+
+    /**
+     *
+     * @param totalPointsPossible
+     */
+    public final void setTotalPointsPossible(double totalPointsPossible) {
+        this.setTotalPointsPossible(totalPointsPossible);
+    }
+
+    /**
+     *
+     * @return
+     */
     public String getRoomNumber() {
         return ("L111");
     }
 
+    /**
+     *
+     * @param roomNumber
+     */
     @Override
     public void setRoomNumber(String roomNumber) {
-    this.setRoomNumber(roomNumber);
+        this.setRoomNumber(roomNumber);
     }
 
+    /**
+     *
+     * @param numberOfComputersAvailable
+     */
     @Override
     public void setNumberOfComputersAvailable(int numberOfComputersAvailable) {
-    this.setNumberOfComputersAvailable(numberOfComputersAvailable);
+        this.setNumberOfComputersAvailable(numberOfComputersAvailable);
     }
-    @Override
-    public String toString(){
-    return "Course name" + getCourseName();
-}
-}
 
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Course name" + getCourseName();
+    }
+}
