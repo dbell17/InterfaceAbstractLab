@@ -12,12 +12,39 @@ package lab2;
  */
 public interface CreditedCourse {
     
-    
-    public abstract int getComputersAvailable();
-    public abstract void setComputersAvailable(int computersAvailable);
-    
-    public abstract double getTotalPossiblePoints();
-    public abstract void setTotalPossiblePoints(double totalPossiblePoints);
-    
-    public abstract String getRoomNumber();
+   /**
+     *
+     * @return
+     */
+    public abstract String getCourseName();
+
+    public abstract void setCourseName(String courseName);
+
+    public abstract String getCourseNumber();
+
+    public abstract void setCourseNumber(String courseNumber);
+
+    /**
+     *
+     * @return
+     */
+    public abstract double getCredits();
+
+    public abstract void setCredits(double credits);
+
+    public abstract String getPrerequisites();
+
+    public abstract void setPrerequisites(String prerequisites);
+
+    public String getRoomNumber();
+
+    public abstract void setRoomNumber(String roomNumber);
+   
+    public abstract int getNumberOfComputersAvailable();
+
+    public abstract void setNumberOfComputersAvailable(int numberOfComputersAvailable);
+
+    public abstract double getTotalPointsPossible();
+
+    public abstract void setTotalPointsPossible(double totalPointsPossible);
 }

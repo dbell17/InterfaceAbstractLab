@@ -13,7 +13,7 @@ public class StartUp {
 
     public static void main(String[] args) {
         CreditedCourse introJava = new IntroJavaCourse("Intro To Java", "801-115", 4.0, "Introduction to programming");
-        CreditedCourse introProgramming = new IntroToProgrammingCourse("Intro to programming", "801-111", 4.0);
+        CreditedCourse introProgramming = new IntroToProgrammingCourse("Intro to programming", "801-111", 4.0, " - ");
         CreditedCourse advancedJava = new AdvancedJavaCourse("Advanced Java", "805-118", 4.0, " Intro to java");
 
         System.out.println(introJava);
