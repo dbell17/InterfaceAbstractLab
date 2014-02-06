@@ -10,7 +10,9 @@ package lab2;
  *
  * @author Don
  */
-public interface CreditedCourses {
+public interface CreditedCourse {
+    
+    
     public abstract int getComputersAvailable();
     public abstract void setComputersAvailable(int computersAvailable);
     

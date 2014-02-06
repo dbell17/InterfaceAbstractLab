@@ -12,12 +12,14 @@ package lab2;
 public class StartUp {
 
     public static void main(String[] args) {
-        CreditedCourses introJava = new IntroJavaCourse("Intro To Java", "801-115", 4.0, "Introduction to programming");
-        CreditedCourses introProgramming = new IntroToProgrammingCourse("Intro to programming", "801-111", 4.0);
-        CreditedCourses advancedJava = new AdvancedJavaCourse("Advanced Java", "805-118", 4.0, " Intro to java");
+        CreditedCourse introJava = new IntroJavaCourse("Intro To Java", "801-115", 4.0, "Introduction to programming");
+        CreditedCourse introProgramming = new IntroToProgrammingCourse("Intro to programming", "801-111", 4.0);
+        CreditedCourse advancedJava = new AdvancedJavaCourse("Advanced Java", "805-118", 4.0, " Intro to java");
 
         System.out.println(introJava);
         System.out.println(introProgramming);
         System.out.println(advancedJava);
+    
+        // Interfaces I have found can be extremely useful.  
     }
 }
