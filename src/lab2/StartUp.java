@@ -20,6 +20,7 @@ public class StartUp {
         System.out.println(introProgramming);
         System.out.println(advancedJava);
     
-        // Interfaces I have found can be extremely useful.  
+        // Interfaces I have found can be extremely useful. By using an interface, you can utilize the methods from the superclass
+        // and override how they work in each class to do what you want it to do.  Its more coding, but very powerful.
     }
 }

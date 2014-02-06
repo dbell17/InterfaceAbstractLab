@@ -17,52 +17,55 @@ public abstract class CreditedCourse {
     private String courseNumber;
     private double credits;
     private String prerequisites;
+    private String roomNumber;
 
-    public String getCourseName() {
+    /**
+     *
+     * @return
+     */
+    public final String getCourseName() {
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
+    public abstract void setCourseName(String courseName);
 
-    public String getCourseNumber() {
+    public final String getCourseNumber() {
         return courseNumber;
     }
 
-    public void setCourseNumber(String courseNumber) {
-        this.courseNumber = courseNumber;
-    }
+    public abstract void setCourseNumber(String courseNumber);
 
-    public double getCredits() {
+    /**
+     *
+     * @return
+     */
+    public final double getCredits() {
         return credits;
     }
 
-    public void setCredits(double credits) {
-        this.credits = credits;
-    }
+    public abstract void setCredits(double credits);
 
-    public String getPrerequisites() {
+    public final String getPrerequisites() {
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
+    public abstract void setPrerequisites(String prerequisites);
+
+    public String getRoomNumber() {
+        return roomNumber;
     }
 
-    public int getNumberOfComputersAvailable() {
+    public abstract void setRoomNumber(String roomNumber);
+   
+    public final int getNumberOfComputersAvailable() {
         return numberOfComputersAvailable;
     }
 
-    public void setNumberOfComputersAvailable(int numberOfComputersAvailable) {
-        this.numberOfComputersAvailable = numberOfComputersAvailable;
-    }
+    public abstract void setNumberOfComputersAvailable(int numberOfComputersAvailable);
 
-    public double getTotalPointsPossible() {
+    public final double getTotalPointsPossible() {
         return totalPointsPossible;
     }
 
-    public void setTotalPointsPossible(double totalPointsPossible) {
-        this.totalPointsPossible = totalPointsPossible;
-    }
+    public abstract void setTotalPointsPossible(double totalPointsPossible);
 }
